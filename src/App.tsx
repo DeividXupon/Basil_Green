@@ -1,14 +1,17 @@
 import React from 'react';
+
 import { GlobalStyle } from './styles/GlobalStyles';
-import Cardapio from './Components/Cardapio';
-import ShowLogo from 'Components/ShowLogo';
+import Header from './Components/Header';
+import Cardapio from 'Components/Cardapio';
+import Home from 'Components/Home';
 
 function App() {
   return (
     <div className='App'>
       <GlobalStyle/>
+      <Header/>
+      <Home/>
       <Cardapio/>
-      <ShowLogo/>
     </div>
   );
 }

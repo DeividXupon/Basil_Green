@@ -1,13 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import { corDeFundo } from "Components/UI/variaveis";
-import imgBg from "../assets/bgFundo.png"
+
 
 export const GlobalStyle = createGlobalStyle`
     
-    /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-    */
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -27,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 100%;
         vertical-align: baseline;
     }
-    /* HTML5 display-role reset for older browsers */
+
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {
         display: block;
@@ -56,9 +52,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background-image: url(${imgBg});
-        background-repeat: no-repeat;
-        background-size: cover;
         background-color: ${corDeFundo};
     }
 `

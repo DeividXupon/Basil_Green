@@ -1,16 +1,13 @@
 import styled from "styled-components";
-
-export const BoxLinks = styled.div`
-    height: 60px;
-    background-color: red;
-`
+import { paddingHeight } from "Components/UI/variaveis";
 
 export const BoxShow = styled.div`
-    height: 40vw;
+    height: 38vw;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px ${paddingHeight};
 `
 
 export const LogoGrande = styled.img`
@@ -24,8 +21,8 @@ export const LogoGrande = styled.img`
 `
 export const Prato = styled.img`
     background-size: cover;
-    width: 30%;
-    margin-top: -6%;
+    width: 45%;
+    margin-top: -9%;
     animation: rodar 45s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -40,7 +37,7 @@ export const Prato = styled.img`
     }
 
     @media(max-width: 700px){
-        margin-top: 2vw;
-        width: 40%;
+        margin-top: 7vw;
+        width: 50%;
     }
 `

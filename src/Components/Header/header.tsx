@@ -1,15 +1,18 @@
 import styled from "styled-components";
-import { corPrimaria, corSecundaria, font1 } from "Components/UI/variaveis";
+import { corPrimaria, corSecundaria, font1, paddingHeight, paddingHeightMedia1000px } from "Components/UI/variaveis";
 
 export const Menu = styled.header`
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 0 15vw;
+    padding: 0 ${paddingHeight};
     background-color: ${corPrimaria};
     height: 50px;
+    width: 100%;
+    z-index: 10;
 
     @media(max-width: 1000px){
-        padding: 0 7vw;
+        padding: 0 ${paddingHeightMedia1000px};
     }
 
     @media(max-width: 700px){
@@ -32,7 +35,7 @@ export const NavegacaoHeader = styled.nav`
 
         &::after{
             content: "";
-            transition: 0.4s;
+            transition: 0.3s;
             width: 5px;
             height: 3px;
             border-radius: 4px;
@@ -42,7 +45,7 @@ export const NavegacaoHeader = styled.nav`
         }
 
         &:hover::after{
-            transition: 0.7s;
+            transition: 0.4s;
             width: 100%;
         }
 

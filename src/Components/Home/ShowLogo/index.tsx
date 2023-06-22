@@ -1,6 +1,7 @@
 import React from "react";
-import { BoxLinks, BoxShow, LogoGrande, Prato } from "./styled";
+import { BoxShow, LogoGrande, Prato } from "./showLogo";
 import logo from "assets/basilgeenLogo.svg";
+
 
 import prato from "assets/prato.png";
 
@@ -12,9 +13,6 @@ const ShowLogo = () => {
                 <LogoGrande src={logo} alt="Logo basil green"></LogoGrande>
                 <Prato src={prato} alt="vista superior de cafe da manha caseiro saldavel" ></Prato>
             </BoxShow>
-            <BoxLinks>
-                
-            </BoxLinks>
         </section>
     )
 }
