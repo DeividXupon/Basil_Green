@@ -10,6 +10,7 @@ export const Menu = styled.header`
     height: 50px;
     width: 100%;
     z-index: 10;
+    box-shadow: 0px 2px 1px ${corPrimaria};
 
     @media(max-width: 1000px){
         padding: 0 ${paddingHeightMedia1000px};
@@ -50,6 +51,9 @@ export const NavegacaoHeader = styled.nav`
         }
 
         @media(max-width: 1000px){
+            &{
+                font-size: 1em;
+            }
             &:hover::after{
                 width: 5px;
             }

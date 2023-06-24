@@ -8,8 +8,8 @@ const Header = () => {
         <Menu>
             <img src={logo} alt="Logo Basil Green"/>
             <NavegacaoHeader>
-                <a href="#a">HOME</a>
-                <a href="#a">CARDAPIO</a>
+                <a href="#home">HOME</a>
+                <a href="#cardapio">CARDAPIO</a>
                 <a href="#a">SOBRE</a>
                 <a href="#a">CHEF</a>
                 <a href="#a">CONTATO</a>

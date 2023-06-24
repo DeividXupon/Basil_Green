@@ -5,7 +5,7 @@ import Links from "./Links";
 
 const Home = () => {
     return(
-        <SectionHome>
+        <SectionHome id = "home">
             <ShowLogo/>
             <Links/>
         </SectionHome>
