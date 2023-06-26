@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { corSecundaria, paddingHeight, fontTilt, font1, paddingHeightMedia1000px, paddingHeightMedia550px, corContraste } from "Components/UI/variaveis"
+import { corSecundaria, paddingHeight, font1, paddingHeightMedia1000px, paddingHeightMedia550px, corContraste } from "Components/UI/variaveis"
 
 export const SectionFiltros = styled.section`
     display: flex;
@@ -60,7 +60,7 @@ export const Op = styled.div`
 
 export const Titulo = styled.h1`
     color: ${corSecundaria};
-    font-family: ${fontTilt};
+    font-family: ${font1};
     font-size: 3em;
 
     @media(max-width: 900px){

@@ -40,4 +40,9 @@ export const Prato = styled.img`
         margin-top: 7vw;
         width: 50%;
     }
+
+    @media(max-width: 550px){
+        margin-top: 0px;
+        width: 70%;
+    }
 `

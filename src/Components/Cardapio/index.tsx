@@ -1,10 +1,14 @@
 import { useState } from "react";
+
 import Buscador from "./Buscador";
 import Filtro from "./Filtro";
 import Opcao from "./Opcao";
+import Itens from "./Itens";
+
 import { BoxCardapio, Titulo, Op, SectionFiltros } from "./cardapio";
 
 import opcoes from "./opcoes.json";
+
 
 const Cardapio = () => {
 
@@ -31,6 +35,8 @@ const Cardapio = () => {
                 </div>
             </SectionFiltros>
             
+            <Itens/>
+
         </BoxCardapio>
     )
 }
