@@ -35,7 +35,7 @@ const Cardapio = () => {
                 </div>
             </SectionFiltros>
             
-            <Itens/>
+            <Itens filtro={filtro} opcao={opcao} busca={busca}/>
 
         </BoxCardapio>
     )

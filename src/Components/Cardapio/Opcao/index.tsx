@@ -5,7 +5,7 @@ import { AiFillCaretUp } from "react-icons/ai";
 
 interface Iporps {
     children: any,
-    opcao: string,
+    opcao: string
 }
 
 const Opcao = ({children, opcao}: Iporps) => {
@@ -14,7 +14,7 @@ const Opcao = ({children, opcao}: Iporps) => {
 
     return (
         <>
-            <ButOption onBlur={() => setAtivo(false)}>
+            <ButOption $ativo={ativo} onBlur={() => setAtivo(false)}>
                 <Press $ordenado={opcao !== "Ordenar Por:"} onClick={() => setAtivo(!ativo)}>
                     <p>{opcao}</p>
                     {ativo ? <AiFillCaretUp size={20} color="black"/> : <AiFillCaretDown size={20} color="black"/>}

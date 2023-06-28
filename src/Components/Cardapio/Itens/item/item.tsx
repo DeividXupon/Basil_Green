@@ -13,6 +13,7 @@ export const ItemGrid = styled.div<{$img?: string}>`
     outline: 5px solid #d8d8d8;
     border-radius: 1%;
     grid-template-areas: "im pr" "vl tg";
+    transition: 1s;
 
 
     .imagem{
@@ -130,14 +131,14 @@ export const ItemGrid = styled.div<{$img?: string}>`
         }
     }
 
-    @media(max-width: 650px){
+    @media(max-width: 720px){
         grid-template-columns: 120px 120px;
         grid-template-rows: 120px 6fr 1fr;
         grid-template-areas: "im vl" "pr pr" "tg tg";
         border-radius: 2%;
         height: 350px;
         width: 260px;
-        margin: 0px 15px;
+        margin: 0px 30px;
 
         .imagem{
             transform: translate(-10px, -10px) scale(1.19);

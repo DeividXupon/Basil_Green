@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { corSecundaria, paddingHeight, font1, paddingHeightMedia1000px, paddingHeightMedia550px, corContraste } from "Components/UI/variaveis"
+import { corSecundaria, paddingHeight, font1, paddingHeightMedia1000px, corContraste } from "Components/UI/variaveis"
 
 export const SectionFiltros = styled.section`
     display: flex;
@@ -15,6 +15,10 @@ export const SectionFiltros = styled.section`
         display: flex;
     }
 
+    @media(max-width: 720px){
+        padding: 0px ${paddingHeightMedia1000px};
+    }
+
     @media(max-width: 430px){
         flex-direction: column;
         align-items: center;
@@ -22,23 +26,24 @@ export const SectionFiltros = styled.section`
         .option{
             justify-self: center;
             border-radius: 30px;
-            margin: 5px 0px;
+            margin: 15px 0px;
             z-index: 1;
         }
     }
 `
 
 export const BoxCardapio = styled.main`
-    margin-top: 70px;
-    padding: 0px ${paddingHeight};
+    padding-top: 40px;
+    padding: 50px ${paddingHeight} 0px ${paddingHeight};
 
     @media(max-width: 1000px){
-        padding: 0px ${paddingHeightMedia1000px};
+        padding-top: 20px;
+        padding: 40px ${paddingHeightMedia1000px} 0px ${paddingHeightMedia1000px};;
         margin-top: 0px;
     }
 
-    @media(max-width: 550px){
-        padding: 0px ${paddingHeightMedia550px};
+    @media(max-width: 720px){
+        padding: 0px 0px;
         margin-top: 0px;
     }
 `

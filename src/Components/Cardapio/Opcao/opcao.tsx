@@ -1,10 +1,17 @@
 import styled from "styled-components";
 import { font1, corPrimaria, corContraste } from "Components/UI/variaveis";
 
-export const ButOption = styled.button<{$margin?: string}>`
+export const ButOption = styled.button<{$ativo?: boolean}>`
     border: none;
     padding: 0px;
-    margin: ${props => props.$margin ?? "0px"};
+    transition: 0.75s;
+    margin: ${props => props.$ativo ? "0px 0px -130px 0px" : "0px"};
+    z-index: 1;
+
+    @media(max-width: 700px){
+        margin: ${props => props.$ativo ? "0px 0px -135px 0px" : "0px"};
+        transition: 0s;
+    }
 `
 
 export const Press = styled.div<{$ordenado?: boolean}>`
