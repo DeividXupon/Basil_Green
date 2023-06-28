@@ -5,9 +5,10 @@ import Filtro from "./Filtro";
 import Opcao from "./Opcao";
 import Itens from "./Itens";
 
-import { BoxCardapio, Titulo, Op, SectionFiltros } from "./cardapio";
+import { BoxCardapio, Op, SectionFiltros } from "./cardapio";
 
 import opcoes from "./opcoes.json";
+import { Titulo } from "Components/UI";
 
 
 const Cardapio = () => {

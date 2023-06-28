@@ -9,7 +9,7 @@ export const BoxFiltro = styled.div`
         gap: 2px;
     }
 
-    @media(max-width: 430px){
+    @media(max-width: 550px){
         justify-content: center;
     }
 `

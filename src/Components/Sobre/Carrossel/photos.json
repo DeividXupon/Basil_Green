@@ -1,0 +1,30 @@
+[
+    {
+        "photo": "/assets/foto1.png",
+        "id": 0
+    },
+    {
+        "photo": "/assets/foto2.png",
+        "id": 1
+    },
+    {
+        "photo": "/assets/foto3.png",
+        "id": 2
+    },
+    {
+        "photo": "/assets/foto4.png",
+        "id": 3
+    },
+    {
+        "photo": "/assets/foto5.png",
+        "id": 4
+    },
+    {
+        "photo": "/assets/foto6.png",
+        "id": 5
+    },
+    {
+        "photo": "/assets/foto7.png",
+        "id": 6
+    }
+]

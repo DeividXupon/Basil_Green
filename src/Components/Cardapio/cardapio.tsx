@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { corSecundaria, paddingHeight, font1, paddingHeightMedia1000px, corContraste } from "Components/UI/variaveis"
+import { paddingHeight, font1, paddingHeightMedia1000px, corContraste, paddingHeightMedia550px } from "Components/UI/variaveis"
 
 export const SectionFiltros = styled.section`
     display: flex;
@@ -19,10 +19,10 @@ export const SectionFiltros = styled.section`
         padding: 0px ${paddingHeightMedia1000px};
     }
 
-    @media(max-width: 430px){
+    @media(max-width: 550px){
         flex-direction: column;
         align-items: center;
-
+        padding: 0px ${paddingHeightMedia550px};
         .option{
             justify-self: center;
             border-radius: 30px;
@@ -60,18 +60,5 @@ export const Op = styled.div`
     @media(max-width: 900px){
         border-left: 1px solid ${corContraste};
         border-right: 1px solid ${corContraste};
-    }
-`
-
-export const Titulo = styled.h1`
-    color: ${corSecundaria};
-    font-family: ${font1};
-    font-size: 3em;
-
-    @media(max-width: 900px){
-        font-size: 2.5em;
-    }
-    @media(max-width: 550px){
-        font-size: 2em;
     }
 `

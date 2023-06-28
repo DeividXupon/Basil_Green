@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {corSecundaria, font1} from "./variaveis"
 
 export const IconeRedeSocial = styled.img`
     width: 45px;
@@ -23,3 +24,16 @@ export const IconeRedeSocial = styled.img`
         border-radius: 3px;
     }
 ` 
+
+export const Titulo = styled.h1`
+    color: ${corSecundaria};
+    font-family: ${font1};
+    font-size: 3em;
+
+    @media(max-width: 900px){
+        font-size: 2.5em;
+    }
+    @media(max-width: 550px){
+        font-size: 2em;
+    }
+`
