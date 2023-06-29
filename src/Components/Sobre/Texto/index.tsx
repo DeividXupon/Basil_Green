@@ -29,7 +29,7 @@ const TextoSobre = () => {
                 <i>Bem-vindo à família Basil Green!</i>
             </Paragra>
             <button onClick={() => setIsAberto(prev => !prev)} className="but">
-                Mostrar mais
+                {isAberto ? "Mostrar menos" : "Mostrar mais"}
             </button>
         </TextoSobreBox>
     )

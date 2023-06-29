@@ -5,6 +5,7 @@ import Header from './Components/Header';
 import Cardapio from 'Components/Cardapio';
 import Home from 'Components/Home';
 import Sobre from 'Components/Sobre';
+import Chef from 'Components/Chef';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <Home/>
       <Cardapio/>
+      <Chef/>
       <Sobre/>
     </div>
   );

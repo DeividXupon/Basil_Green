@@ -23,6 +23,7 @@ export const CarrosselMain = styled.div`
     min-height: 400px;
     min-width: 400px;
 
+
     @media(max-width: 550px){
         max-height: 400px;
         max-width: 350px;

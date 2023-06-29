@@ -1,4 +1,4 @@
-import { corPrimaria, corSecundaria, font1, font2 } from "Components/UI/variaveis";
+import { corSecundaria, font1, font2 } from "Components/UI/variaveis";
 import styled from "styled-components";
 
 export const TextoSobreBox = styled.div`
@@ -7,18 +7,18 @@ export const TextoSobreBox = styled.div`
     padding: 0px 0px 40px 0px ;
 
     .but{
-        width: 240px;
+        width: 250px;
         padding: 10px;
         margin-top: 25px;
         font-size: 1.5em;
         align-self: center;
         border: none;
-        background: ${corPrimaria};
+        background: ${corSecundaria};
         border-radius: 30px;
         font-family: ${font1};
 
         @media(max-width: 720px){
-            width: 150px;
+            width: 170px;
             font-size: 1.2em;
         }
     }

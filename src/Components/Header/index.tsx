@@ -10,9 +10,8 @@ const Header = () => {
             <NavegacaoHeader>
                 <a href="#home">HOME</a>
                 <a href="#cardapio">CARDAPIO</a>
+                <a href="#chef">CHEF</a>
                 <a href="#sobre">SOBRE</a>
-                <a href="#a">CHEF</a>
-                <a href="#a">CONTATO</a>
             </NavegacaoHeader>
         </Menu>
     )
