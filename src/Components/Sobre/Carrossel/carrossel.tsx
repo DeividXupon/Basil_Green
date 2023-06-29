@@ -15,7 +15,6 @@ export const CarrosselMain = styled.div`
     }
     overflow-x: scroll;
 
-    box-shadow: 0px 0px 15px 0px black;
     border-radius: 3px;
     display: flex;
     max-height: 400px;
@@ -56,7 +55,7 @@ export const BoxCarrossel = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0px 0px 10px 0px black;
+        box-shadow: 0px 0px 4px 0px black;
         position: relative;
 
         &:hover{
@@ -85,12 +84,13 @@ export const BoxCarrossel = styled.div`
             }
     }
 `
-export const FotoBut = styled.a<{$img: string}>`
-    border: 3px solid black;
+export const FotoBut = styled.a<{$img: string, $visualizado: boolean}>`
+    border: 3px solid ${props => props.$visualizado ? corSecundaria : "black"};
     width: 100px;
     height: 50px;
     background-image: url(${props => props.$img});
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     border-radius: 8px;
 
     &:hover{

@@ -5,6 +5,7 @@ export const Mostruario = styled.section`
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
+    min-height: 600px;
 
     @media(max-width: 900px){
         height: 600px;

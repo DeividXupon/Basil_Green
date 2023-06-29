@@ -17,6 +17,11 @@ export const TextoSobreBox = styled.div`
         border-radius: 30px;
         font-family: ${font1};
 
+        &:hover{
+            border: 2px solid black;
+            padding: 8px;
+        }
+
         @media(max-width: 720px){
             width: 170px;
             font-size: 1.2em;

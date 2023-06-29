@@ -30,7 +30,7 @@ const Item = ({item}: Iprops) => {
             </div>
             <div className="tags">
                 <div className="tag">{item.category.label}</div>
-                <div className="tag">{item.size}kg</div>
+                <div className="tag">{item.size}g</div>
                 <div className="tag">Serve {item.serving}</div>
             </div>
         </ItemGrid>

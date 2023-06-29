@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {corPrimaria, corSecundaria, paddingHeight, paddingHeightMedia1000px, paddingHeightMedia550px } from 'Components/UI/variaveis'
+import {corPrimaria, paddingHeight, paddingHeightMedia1000px, paddingHeightMedia550px } from 'Components/UI/variaveis'
 
 export const BoxSobre = styled.section`
     background: ${corPrimaria};

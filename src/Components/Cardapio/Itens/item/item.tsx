@@ -8,9 +8,9 @@ export const ItemGrid = styled.div<{$img?: string}>`
     background-color: ${corDeFundo};
     grid-template-columns: 140px 3fr;
     grid-template-rows: 140px 1fr;
-    background-color: #d8d8d8;
+    background-color: #79b88e;
     margin: 15px 0px;
-    outline: 5px solid #d8d8d8;
+    outline: 5px solid #79b88e;
     border-radius: 1%;
     grid-template-areas: "im pr" "vl tg";
     transition: 1s;

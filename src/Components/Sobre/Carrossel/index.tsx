@@ -12,7 +12,7 @@ const Carrossel = () => {
     return(
         <BoxCarrossel>
             <div className="boxImgs">
-                <a onClick={() => setHref(prev => prev !== 0 ? prev - 1 : prev)}
+                <a onClick={() => setHref(prev => prev !== 0 ? prev - 1 : 6)}
                     href={`#${href}`}>
                     <button className="butCarro1">
                         <IoIosArrowDropleft size={"4.5vw"} color={corContraste} />
@@ -26,7 +26,7 @@ const Carrossel = () => {
                             $img={foto.photo}
                         />)}
                 </CarrosselMain>
-                <a onClick={() => setHref(prev => prev !== 6 ? prev + 1 : prev)}
+                <a onClick={() => setHref(prev => prev !== 6 ? prev + 1 : 0)}
                     href={`#${href}`}>
                     <button className="butCarro2">
                         <IoIosArrowDropright size={"4.5vw"} color={corContraste}/>
@@ -34,7 +34,7 @@ const Carrossel = () => {
                 </a>
             </div>
             <div className="listaEscolha">
-                {photos.map(foto => <FotoBut href={`#${href}`} onClick={() => setHref(foto.id)}  $img={foto.photo}/>)}
+                {photos.map(foto => <FotoBut $visualizado={foto.id === href} href={`#${href}`} onClick={() => setHref(foto.id)}  $img={foto.photo}/>)}
             </div>
         </BoxCarrossel>
     )
